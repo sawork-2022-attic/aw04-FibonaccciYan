@@ -6,6 +6,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
@@ -40,6 +41,7 @@ public class JD implements PosDB {
         return null;
     }
 
+    @Cacheable("result of searching 'java'")
     public static List<Product> parseJD(String keyword) throws IOException {
         //获取请求https://search.jd.com/Search?keyword=java
         String url = "https://search.jd.com/Search?keyword=" + keyword;
