@@ -24,6 +24,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
@@ -82,7 +86,7 @@
                         <image>172.26.7.190:5000/openjdk:8-jdk-stretch</image>
                     </from>
                     <to>
-                        <image>app-webpos-cache</image>
+                        <image>app-webpos-cache-redis</image>
                     </to>
                     <allowInsecureRegistries>true</allowInsecureRegistries>
                 </configuration>

@@ -32,6 +32,7 @@ public class JD implements PosDB {
     }
 
     @Override
+    @Cacheable("product")
     public Product getProduct(String productId) {
         for (Product p : getProducts()) {
             if (p.getId().equals(productId)) {
