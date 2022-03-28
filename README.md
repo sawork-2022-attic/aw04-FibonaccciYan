@@ -88,4 +88,4 @@ Please **write a report** on the performance differences you notice among the ab
 
 ## 附：
 
-本报告中提及的所有测试结果均可在 `./report/index/` 中找到。
+本报告中提及的所有测试结果均可在 `report/index/` 中找到。
